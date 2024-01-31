@@ -11,17 +11,4 @@ function typeWriter() {
   }
 }
 
-const textElement = document.getElementById("text");
-   const textToType = "Hello, i'm Justine";
 
-   function typeText() {
-      textElement.textContent = "";
-      for (let i = 0; i < textToType.length; i++) {
-         setTimeout(() => {
-            textElement.textContent += textToType[i];
-         }, i * 50);
-      }
-   }
-
-   // Trigger the typing animation
-   typeText();
