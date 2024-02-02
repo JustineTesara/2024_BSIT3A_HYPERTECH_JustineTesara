@@ -18,7 +18,75 @@ body {
     font-size: 25px;
     font-weight: 250;
   }
-  .sidenav {
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #111;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: #f1f1f1;
+    padding: 16px;
+    text-decoration: none;
+    transition: opacity 0.3s, background-color 0.3s;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .sidebar > a:hover {
+    background-color: #04AA6D;
+  }
+  .sidebar > a:active {
+    opacity: 0.6;
+  }
+  .sidebar > a > svg {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0;
+    
+  }
+  /* .sidebar{
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  } */
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+    background-image: url('nature.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  /* .sidenav {
     height: 100%;
     width: 160px;
     position: fixed;
@@ -50,7 +118,7 @@ body {
     margin-bottom: 5px;
   }
   .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
+    margin-left: 160px;
     background-image: url('nature.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -64,13 +132,13 @@ body {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
+  } */
   .container-profile {
     background-color: #f1f1f1;
-    width: 485px;
+    width: 38%;
     margin: auto;
     margin-top: 160px;
-    padding: 20px 20px;
+    padding: 20px;
     border-radius: 16px;
     box-shadow: 2px 7px 14px 2px rgba(0,0,0,0.2);
   }
@@ -78,6 +146,7 @@ body {
     display: inline-block;
 
   }
+
   .profile{
     vertical-align: top;
     display: inline-block;
@@ -87,16 +156,19 @@ body {
     padding: 15px 20px;
   }
   .profile > img {
-    width: 140px;
+    width: 160px;
     border-radius: 50%;
   }
   .info > h3{
-    font-size: 34px;
+    font-size: 2rem;
+    color: #000;
+    margin: 0;
   }
+  
   .main-container
   ,.contact-container{
     display: block;
-    padding: 100px;
+    padding: 10%;
     margin-left: 17%;
   }
   .main-container > h2  > button  {
@@ -224,28 +296,3 @@ body {
   opacity: 0.4;
 }
 
-
-
-/* input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-} */
