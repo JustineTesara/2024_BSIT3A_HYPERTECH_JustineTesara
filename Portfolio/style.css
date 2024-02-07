@@ -78,7 +78,7 @@ div.content {
     float: none;
   }
 }
-.wrapper {
+/* .wrapper {
   height: 100vh;
   display: grid;
   place-items: center;
@@ -104,7 +104,32 @@ div.content {
   50% {
     border-color: transparent
   }
+} */
+
+.intro-container{
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  
 }
+.intro-text{
+  margin-top: 30%;
+  text-align: center;
+  line-height: 1.5;
+}
+.intro-text > h1 {
+  font-size: 4rem;
+  font-family: 'Minecraft', sans-serif;
+}
+.intro-text > h2 {
+  font-size: 3rem;
+}
+
+.intro-text > p {
+  font-size: 1rem;
+  font-family: 'Minecraft', sans-serif;
+}
+
 
 .main-container
 {
