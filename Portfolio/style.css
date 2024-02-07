@@ -85,13 +85,13 @@ div.content {
 }
 
 .typing-demo {
-  width: 40%;
+  width: 20%;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: 'Minecraft', sans-serif;
-  font-size: 4em;
+  font-size: 2em;
 }
 
 @keyframes typing {
