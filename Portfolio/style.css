@@ -122,20 +122,28 @@ div.content {
   
 }
 .intro-text > a > h1 {
-  
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: 'Minecraft', sans-serif;
+  transition: color 0.7s;
+}
+.intro-text > a > h1:hover {
+  color: #04AA6D;
 }
 .intro-text > h2 {
   font-size: 3rem;
 }
 
 .intro-text > p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: 'Minecraft', sans-serif;
 }
 .intro-text > a > svg:hover {
+  transition: fill 0.7s, box-shadow 0.7s;
+}
+
+.intro-text > a > svg:hover {
   fill: #04AA6D;
+  box-shadow: 2px 2px 7px rgba(0,0,0,0.5);
 }
 
 
@@ -160,10 +168,6 @@ div.content {
 }
 .main-container > h2 {
   font-size: 32px;
-}
-.description{
-  font-size: 16px;
-  width: 75%;
 }
 .my-button {
   display: block;
@@ -196,7 +200,7 @@ div.content {
   width: 300px;
   height: 400px;
   background-color: white;
-  margin-right: 20px;
+  margin-right: 15px;
   margin-bottom: 30px;
   text-align: center;
   vertical-align: top;
@@ -272,4 +276,15 @@ opacity: 0.8;
 }
 .social-icon > a > svg:active{
 opacity: 0.4;
+}
+.personal-info > img {
+  border-radius: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+.personal-info > p {
+  font-size: 16px;
+  width: 65%;
+  display: inline-block;
+  margin-right: 12%;
 }
