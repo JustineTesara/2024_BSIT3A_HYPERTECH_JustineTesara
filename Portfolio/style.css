@@ -2,8 +2,8 @@ body {
   font-family: "Lato", sans-serif;
   margin: 0;
   /* background-color: rgb(234,231,230); */
-  background-color: #1c1a1a;
-  color: #f1f1f1;
+  background-color: #D4E0F7;
+  color: #342009;
   
   box-sizing: border-box;
 }
@@ -23,7 +23,7 @@ h3{
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #111;
+  background-color: #342009;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -31,7 +31,7 @@ h3{
 
 .sidebar a {
   display: block;
-  color: #f1f1f1;
+  color: #D4E0F7;
   padding: 16px;
   text-decoration: none;
   transition: opacity 0.3s, background-color 0.3s;
@@ -39,7 +39,7 @@ h3{
   font-size: 1.5rem;
 }
 .sidebar > a:hover {
-  background-color: #04AA6D;
+  background-color: #B86B14;
 }
 .sidebar > a:active {
   opacity: 0.6;
@@ -55,7 +55,8 @@ div.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
-  background-image: url('https://i.pinimg.com/736x/76/69/b3/7669b3fd28bdf8194174ebe1f86cc89e.jpg');
+  /* background-color: #FB8604; */
+  background-image: url('https://i.pinimg.com/564x/e3/12/7c/e3127c33250e49c9df1eb0e2dc111718.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,7 +128,7 @@ div.content {
   transition: color 0.7s;
 }
 .intro-text > a > h1:hover {
-  color: #04AA6D;
+  color: #1258DC;
 }
 .intro-text > h2 {
   font-size: 3rem;
@@ -138,12 +139,8 @@ div.content {
   font-family: 'Minecraft', sans-serif;
 }
 .intro-text > a > svg:hover {
-  transition: fill 0.7s, box-shadow 0.7s;
-}
-
-.intro-text > a > svg:hover {
-  fill: #04AA6D;
-  box-shadow: 2px 2px 7px rgba(0,0,0,0.5);
+  transition: fill 0.7s;
+  fill: #1258DC;
 }
 
 
@@ -173,16 +170,17 @@ div.content {
   display: block;
   cursor: pointer;
   border: none;
-  color: white;
-  background-color: #04AA6D;
+  color: #D4E0F7;
+  background-color: #FB8604;
   padding: 10px 20px;
   border-radius: 3px;
   font-weight: bold;
-  transition: opacity 0.3s;
+  transition: color 0.4s, background-color 0.4s;
   margin-top: 30px;
 }
 .my-button:hover {
-  opacity: 0.8;
+  color: #D4E0F7;
+  background-color: #1258DC;
 }
 .my-button:active {
   opacity: 0.4;
@@ -199,7 +197,7 @@ div.content {
   display: inline-block;
   width: 300px;
   height: 400px;
-  background-color: white;
+  background-color: #B86B14;
   margin-right: 15px;
   margin-bottom: 30px;
   text-align: center;
@@ -214,21 +212,21 @@ div.content {
 }
 .col > p {
   margin-top: 40px;
-  color: #000;
+  color: #D4E0F7;
   margin-bottom: 30px;
 }
 .col > a {
   margin-top: 0;
-  border: 2px solid #04AA6D;
-  color: #04AA6D;
+  background-color: #FB8604;
+  color: #D4E0F7;
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 3px;
   transition: color 0.3s, background-color 0.3s;
 }
 .col > a:hover{
-  color: #f1f1f1;
-  background-color: #04AA6D;
+  color: #342009;
+  background-color: #D4E0F7;
 }
 .col > a:active{
   opacity: 0.7;
