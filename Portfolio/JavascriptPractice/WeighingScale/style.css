@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.6);
+    border-radius: 13px;
+    background-color: #375F1B;
+    color: #EBF7E3;
+}
+.container > h2 {
+    font-size: 3em;
+}
+.container > input {
+    padding: 6px;
+    border: 1px solid black;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+.container > button {
+    color: #EBF7E3;
+    background-color: #66B032;
+    padding: 10px 15px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container > button:hover {
+    color: #1B3409;
+    background-color: #EBF7E3;
+}
