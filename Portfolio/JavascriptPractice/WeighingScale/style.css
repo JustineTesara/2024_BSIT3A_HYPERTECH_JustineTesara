@@ -34,3 +34,6 @@ body {
     color: #1B3409;
     background-color: #EBF7E3;
 }
+#result {
+    font-weight: bold;
+}
