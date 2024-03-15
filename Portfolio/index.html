@@ -27,18 +27,9 @@
   </div>
   
   <div class="content" id="home">
-    <!-- <div class="wrapper">
-      <div class="typing-demo">
-        Hello I'm justine
-      </div>
-    </div> -->
-
     <div class="intro-container">
       <div class="intro-text">
-        <a href="#home"><h1>Hello</h1></a>
-        <h2>I'm Justine</h2>
-        <p>BSIT Student</p>
-        <p>BU Polangui</p>
+        <h2><span id="typed-text"></span></h2>
         <br>
         <a href="#about"><svg fill="#f1f1f1" height="30px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" stroke="#f1f1f1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M256,5.333C114.88,5.333,0,117.76,0,256s114.88,250.667,256,250.667S512,394.24,512,256S397.12,5.333,256,5.333z M256,485.333C126.613,485.333,21.333,382.4,21.333,256S126.613,26.667,256,26.667S490.667,129.493,490.667,256 S385.387,485.333,256,485.333z"></path> <path d="M401.6,178.453c-4.8-3.733-11.52-3.093-15.253,1.493L256,340.373L125.653,179.947c-3.733-4.587-10.453-5.227-15.04-1.493 s-5.227,10.453-1.493,15.04L247.787,364.16c3.733,4.587,10.453,5.227,15.04,1.6c0.533-0.427,1.067-0.96,1.6-1.6l138.667-170.667 C406.827,188.907,406.08,182.187,401.6,178.453z"></path> </g> </g> </g> </g></svg></a>
         
@@ -67,46 +58,59 @@
                 <div class="w3-container w3-blue w3-round-large" style="width:25%">25%</div>
               </div>
             <button class="my-button">Hire me</button>
-
+            
             <h2 id="project" style="margin-top: 300px;">
                 My Projects
             </h2>
+            
             <hr>
 
             <div class="row">
               <div class="col">
+                <img src="project1.png" alt="pochita">
+                <div class="text-project">
+                  <p> A weight converter project in JavaScript is a simple program that helps users convert weights from one unit to another.</p>
+                </div>
+                <a href="JavascriptPractice/WeighingScale/index.html">View</a>
+              </div>
+
+              <div class="col">
+                <img src="project2.png" alt="pochita">
+                <div class="text-project">
+                  <p>A JavaScript counter program is a simple project displaying a digital counter on a webpage with buttons for incrementing and decrementing the count.</p>
+                </div>
+                <a href="JavascriptPractice/CounterProgram/index.html">View</a>
+              </div>
+
+              <div class="col">
+                <img src="project3.png" alt="pochita">
+                <div class="text-project">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, expedita.</p>
+                </div>
+                <a href="JavascriptPractice/RandomPassGen/index.html">View</a>
+              </div>
+
+              <div class="col">
+                <img src="project4.png" alt="pochita">
+                <div class="text-project">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, expedita.</p>
+                </div>                
+                <a href="JavascriptPractice/TicTacToe/index.html">View</a>
+              </div>
+
+              <div class="col">
                 <img src="pochita.jpg" alt="pochita">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, expedita.</p>
+                <div class="text-project">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, expedita.</p>
+                </div>                
                 <a href="#">View</a>
               </div>
 
               <div class="col">
                 <img src="pochita.jpg" alt="pochita">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, expedita.</p>
-                <a href="#">View</a>
-              </div>
-
-              <div class="col">
-                <img src="pochita.jpg" alt="pochita">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, expedita.</p>
-                <a href="#">View</a>
-              </div>
-
-              <div class="col">
-                <img src="pochita.jpg" alt="pochita">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, expedita.</p>
-                <a href="#">View</a>
-              </div>
-
-              <div class="col">
-                <img src="pochita.jpg" alt="pochita">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, expedita.</p>
-                <a href="#">View</a>
-              </div>
-
-              <div class="col">
-                <img src="pochita.jpg" alt="pochita">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, expedita.</p>
+                <div class="text-project">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, expedita.</p>
+                </div>                
                 <a href="#">View</a>
               </div>
 
@@ -128,29 +132,6 @@
                     <img src="mail.png"  alt="location">
                     <p style="display: inline-block;">justine.tesara0907@gmail.com</p>
                 </div>
-                
-
-                
-                <!-- <form action="/action_page.php">
-                    <p>Let's get in touch. Send me a message:</p>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                      <option value="australia">Australia</option>
-                      <option value="canada">Canada</option>
-                      <option value="usa">USA</option>
-                    </select>
-                
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                
-                    <input type="submit" value="Submit">
-                  </form> -->
                   <form action="#" class="w3-text-blue w3-margin">
         
                     <div class="w3-row w3-section">
@@ -224,3 +205,5 @@
       
 </body>
 </html>
+
+<script src="script.js"></script>
