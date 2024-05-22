@@ -1,24 +1,27 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
-  /* background-color: rgb(234,231,230); */
   background-color: #D4E0F7;
   color: #342009;
-  
   box-sizing: border-box;
 }
-@import url('https://fonts.cdnfonts.com/css/minecraft-4');
-hr{
+
+hr {
   width: 30%;
 }
-h2{
+
+h2 {
   font-size: 30px;
   font-weight: 300;
 }
-h3{
+
+h3 {
   font-size: 25px;
   font-weight: 250;
 }
+
 .sidebar {
   margin: 0;
   padding: 0;
@@ -38,24 +41,24 @@ h3{
   text-align: center;
   font-size: 1.5rem;
 }
+
 .sidebar > a:hover {
   background-color: #B86B14;
 }
+
 .sidebar > a:active {
   opacity: 0.6;
 }
+
 .sidebar > a > svg {
   display: block;
   margin: 0 auto;
-  margin-bottom: 0;
-  
 }
 
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
-  /* background-color: #FB8604; */
   background-image: url('https://i.pinimg.com/564x/e3/12/7c/e3127c33250e49c9df1eb0e2dc111718.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -69,8 +72,12 @@ div.content {
     height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -80,54 +87,62 @@ div.content {
   }
 }
 
-.intro-container{
+.intro-container {
   width: 60%;
   height: 60%;
   margin: auto;
 }
-.intro-text{
+
+.intro-text {
   margin-top: 30%;
   text-align: center;
   line-height: 1.5;
 }
-.intro-text  > a{
+
+.intro-text > a {
   text-decoration: none;
   margin-top: 300px;
 }
-.intro-text  > a > svg{
+
+.intro-text > a > svg {
   margin-top: 7em;
 }
+
 .intro-text > h2 {
   font-size: 3rem;
 }
+
 .intro-text > a > svg:hover {
   transition: fill 0.7s;
   fill: #1258DC;
 }
 
-
-.main-container
-{
+.main-container {
   display: block;
   padding: 10%;
   margin-left: 10%;
 }
-.main-container > h2  > button  {
+
+.main-container > h2 > button {
   border: none;
   background-color: #1c1a1a;
   color: #f1f1f1;
   cursor: pointer;
   transition: opacity 0.4s;
 }
-.main-container > h2  > button:hover  {
+
+.main-container > h2 > button:hover {
   opacity: 0.8;
 }
-.main-container > h2  > button:active  {
+
+.main-container > h2 > button:active {
   opacity: 0.4;
 }
+
 .main-container > h2 {
   font-size: 32px;
 }
+
 .my-button {
   display: block;
   cursor: pointer;
@@ -140,48 +155,59 @@ div.content {
   transition: color 0.4s, background-color 0.4s;
   margin-top: 30px;
 }
+
 .my-button:hover {
   color: #D4E0F7;
   background-color: #1258DC;
 }
+
 .my-button:active {
   opacity: 0.4;
 }
+
 #typing-container {
   padding: 10px;
   overflow: hidden;
   width: 200px;
 }
-.row{
-  display: block;
-  padding-right: 0;
-  margin-right: -120px;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
-.col{
-  display: inline-block;
-  width: 350px;
+
+.col {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
   height: 450px;
   background-color: #B86B14;
-  margin-right: 15px;
-  margin-bottom: 30px;
   text-align: center;
   vertical-align: top;
   border-radius: 15px;
+  padding: 15px;
 }
+
 .col > img {
-  width: 350px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
 
-}
-.text-project{
+.text-project {
   height: 150px;
-}
-.text-project > p {
-  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #D4E0F7;
-  margin-bottom: 24px;
 }
+
+.text-project > p {
+  margin: 0;
+}
+
 .col > a {
   margin-top: 24px;
   background-color: #FB8604;
@@ -191,73 +217,88 @@ div.content {
   border-radius: 3px;
   transition: color 0.3s, background-color 0.3s;
 }
-.col > a:hover{
+
+.col > a:hover {
   color: #342009;
   background-color: #D4E0F7;
 }
-.col > a:active{
+
+.col > a:active {
   opacity: 0.7;
 }
 
 .contacts {
-margin-bottom: 5px;
-
-}
-.contact-icon{
-margin-bottom: 5px;
-}
-.contact-icon>img{
-margin-right: 10px;
+  margin-bottom: 5px;
 }
 
-.contact-icon>p{
-font-size: 14px;
+.contact-icon {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
+
+.contact-icon > img {
+  margin-right: 10px;
+}
+
+.contact-icon > p {
+  font-size: 14px;
+}
+
 .contacts > form {
-margin-top: 40px;
+  margin-top: 40px;
 }
-.contacts > form > p{
-font-size: 13px;
-}
-.contacts > input {
-margin-top: 10px;
-}
-.contacts > label {
-margin-bottom: 10px;
-}
-.social-platforms{
-margin-top: 100px;
-vertical-align: top;
-margin-bottom: 30px;
-}
-.social-icon{
 
-display: inline;
-width: 40px;
-margin-right: 4px;
+.contacts > form > p {
+  font-size: 13px;
 }
-.social-icon > a > svg:hover{
-opacity: 0.8;
+
+.contacts > input {
+  margin-top: 10px;
 }
-.social-icon > a > svg:active{
-opacity: 0.4;
+
+.contacts > label {
+  margin-bottom: 10px;
 }
+
+.social-platforms {
+  margin-top: 100px;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  margin-right: 4px;
+}
+
+.social-icon > a > svg:hover {
+  opacity: 0.8;
+}
+
+.social-icon > a > svg:active {
+  opacity: 0.4;
+}
+
 .personal-info > img {
   border-radius: 30px;
   display: inline-block;
   vertical-align: top;
 }
+
 .personal-info > p {
   font-size: 16px;
   width: 65%;
   display: inline-block;
   margin-right: 12%;
 }
+
 #typed-text {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  overflow: hidden; 
-  border-right: .15em solid black; 
-  white-space: nowrap; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  overflow: hidden;
+  border-right: .15em solid black;
+  white-space: nowrap;
   animation: typing 3.5s steps(40, end), blink-cursor .5s step-end infinite;
 }
 
