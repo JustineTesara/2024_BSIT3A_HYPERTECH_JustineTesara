@@ -1,11 +1,10 @@
-@import url('https://fonts.cdnfonts.com/css/minecraft-4');
-
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
   background-color: #D4E0F7;
   color: #342009;
   box-sizing: border-box;
+  transition: background-color 0.5s ease;
 }
 
 hr {
@@ -42,48 +41,52 @@ h3 {
   font-size: 1.5rem;
 }
 
-.sidebar > a:hover {
+.sidebar a:hover {
   background-color: #B86B14;
 }
 
-.sidebar > a:active {
+.sidebar a:active {
   opacity: 0.6;
 }
 
-.sidebar > a > svg {
+.sidebar svg {
   display: block;
   margin: 0 auto;
 }
 
-div.content {
+.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
-  background-image: url('https://i.pinimg.com/564x/e3/12/7c/e3127c33250e49c9df1eb0e2dc111718.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: url('https://i.pinimg.com/564x/e3/12/7c/e3127c33250e49c9df1eb0e2dc111718.jpg') center/cover no-repeat fixed;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.content.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media screen and (max-width: 700px) {
   .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
+      width: 100%;
+      height: auto;
+      position: relative;
   }
   .sidebar a {
-    float: left;
+      float: left;
   }
-  div.content {
-    margin-left: 0;
+  .content {
+      margin-left: 0;
   }
 }
 
 @media screen and (max-width: 400px) {
   .sidebar a {
-    text-align: center;
-    float: none;
+      text-align: center;
+      float: none;
   }
 }
 
@@ -91,30 +94,32 @@ div.content {
   width: 60%;
   height: 60%;
   margin: auto;
+  text-align: center;
 }
 
 .intro-text {
   margin-top: 30%;
-  text-align: center;
   line-height: 1.5;
 }
 
-.intro-text > a {
+.intro-text a {
   text-decoration: none;
-  margin-top: 300px;
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #1258DC;
+  color: #D4E0F7;
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.intro-text > a > svg {
-  margin-top: 7em;
+.intro-text a:hover {
+  background-color: #D4E0F7;
+  color: #342009;
 }
 
-.intro-text > h2 {
+.intro-text h2 {
   font-size: 3rem;
-}
-
-.intro-text > a > svg:hover {
-  transition: fill 0.7s;
-  fill: #1258DC;
 }
 
 .main-container {
@@ -123,7 +128,11 @@ div.content {
   margin-left: 10%;
 }
 
-.main-container > h2 > button {
+.main-container h2 {
+  font-size: 32px;
+}
+
+.main-container button {
   border: none;
   background-color: #1c1a1a;
   color: #f1f1f1;
@@ -131,16 +140,12 @@ div.content {
   transition: opacity 0.4s;
 }
 
-.main-container > h2 > button:hover {
+.main-container button:hover {
   opacity: 0.8;
 }
 
-.main-container > h2 > button:active {
+.main-container button:active {
   opacity: 0.4;
-}
-
-.main-container > h2 {
-  font-size: 32px;
 }
 
 .my-button {
@@ -157,7 +162,6 @@ div.content {
 }
 
 .my-button:hover {
-  color: #D4E0F7;
   background-color: #1258DC;
 }
 
@@ -184,12 +188,11 @@ div.content {
   height: 450px;
   background-color: #B86B14;
   text-align: center;
-  vertical-align: top;
   border-radius: 15px;
   padding: 15px;
 }
 
-.col > img {
+.col img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -204,11 +207,11 @@ div.content {
   color: #D4E0F7;
 }
 
-.text-project > p {
+.text-project p {
   margin: 0;
 }
 
-.col > a {
+.col a {
   margin-top: 24px;
   background-color: #FB8604;
   color: #D4E0F7;
@@ -218,12 +221,12 @@ div.content {
   transition: color 0.3s, background-color 0.3s;
 }
 
-.col > a:hover {
+.col a:hover {
   color: #342009;
   background-color: #D4E0F7;
 }
 
-.col > a:active {
+.col a:active {
   opacity: 0.7;
 }
 
@@ -237,34 +240,33 @@ div.content {
   align-items: center;
 }
 
-.contact-icon > img {
+.contact-icon img {
   margin-right: 10px;
 }
 
-.contact-icon > p {
+.contact-icon p {
   font-size: 14px;
 }
 
-.contacts > form {
+.contacts form {
   margin-top: 40px;
 }
 
-.contacts > form > p {
+.contacts form p {
   font-size: 13px;
 }
 
-.contacts > input {
+.contacts input {
   margin-top: 10px;
 }
 
-.contacts > label {
+.contacts label {
   margin-bottom: 10px;
 }
 
 .social-platforms {
-  margin-top: 100px;
+  margin: 100px 0 30px;
   vertical-align: top;
-  margin-bottom: 30px;
 }
 
 .social-icon {
@@ -273,21 +275,21 @@ div.content {
   margin-right: 4px;
 }
 
-.social-icon > a > svg:hover {
+.social-icon svg:hover {
   opacity: 0.8;
 }
 
-.social-icon > a > svg:active {
+.social-icon svg:active {
   opacity: 0.4;
 }
 
-.personal-info > img {
+.personal-info img {
   border-radius: 30px;
   display: inline-block;
   vertical-align: top;
 }
 
-.personal-info > p {
+.personal-info p {
   font-size: 16px;
   width: 65%;
   display: inline-block;
