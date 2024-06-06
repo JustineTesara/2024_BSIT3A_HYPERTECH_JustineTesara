@@ -9,8 +9,8 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <title>My Web</title>
     <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="sidebar">
@@ -154,6 +154,30 @@
             typeSpeed: 50,
             backSpeed: 50,
             loop: true
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('.sidebar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in effect
+        document.addEventListener('scroll', () => {
+            const content = document.querySelector('.content');
+            if (content.getBoundingClientRect().top < window.innerHeight) {
+                content.classList.add('visible');
+            }
+        });
+
+        // Initial fade-in
+        window.addEventListener('load', () => {
+            const content = document.querySelector('.content');
+            content.classList.add('visible');
         });
     </script>
 </body>
